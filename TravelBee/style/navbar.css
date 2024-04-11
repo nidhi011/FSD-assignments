@@ -1,0 +1,126 @@
+/* *{
+  margin-top: 0%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  background-color:rgba(253, 229, 193, 0.433);
+  
+  width: 95%;
+
+  position: fixed;
+}
+
+
+.logo > img{
+   width: 7em;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+ 
+}
+
+.nav-list li {
+  margin-right: 1%;
+  padding: 0%;
+}
+
+.nav-list a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight:bolder ;
+  font-size: larger;
+  white-space: nowrap;
+}
+
+.nav-list a:hover {
+  color:rgb(226, 97, 9);
+ 
+  text-shadow: 
+  -1px -1px 0 #ddd,  
+   1px -1px 0 #ddd,
+  -1px  1px 0 #ddd,
+   1px  1px 0 #ddd;
+}
+
+.nav-actions {
+  display: flex;
+}
+
+.button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+ 
+  cursor: pointer;
+}
+.loginBtn {
+  background: linear-gradient(45deg,rgb(62, 112, 81) 60%, rgb(245, 141, 73));
+}
+.registerBtn {
+  background: linear-gradient(45deg,rgb(226, 97, 9), rgb(245, 141, 73));
+}
+.button:hover {
+  filter: saturate(150%) brightness(120%) ;
+} */
+
+
+ /* <!-- NavBar Start --> */
+.aboutnav {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px 10px 10px;
+  background-color: #D7CA9A;
+  
+}
+
+.logo {
+  width: 70px; /* Adjust the width as needed */
+  padding-left: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333; /* Adjust the color as needed */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ff4500; /* Color on hover */
+  transform: scale(1.2);
+}
+
+.user-actions a {
+   border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff4500, orange);
+  padding: 7% 15%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.user-actions a:hover{
+  transform: scale(1.1);
+}
+.user-actions {
+  display: flex;
+  gap: 20px;
+  padding: 2%;
+  
+}
