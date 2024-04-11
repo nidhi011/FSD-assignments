@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image:url(bg.jpeg);
+    background-size: cover;
+
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #262525;
+    overflow-y: auto;
+    padding-top: 20px;
+    transition: width 0.5s;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    color: rgb(179, 184, 184);
+  }
+  
+  .toggle-btn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .toggle-btn span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .submenu {
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .submenu li {
+    padding: 5px;
+  }
+  
+  .submenu li a {
+    color: #ccc;
+  }
+  
+  .sidebar.active {
+    width: 80px;
+  }
+  
+  .sidebar.active .toggle-btn span {
+    width: 20px;
+  }
+  
+  .sidebar.active .menu {
+    display: none;
+  }
+  
+  .sidebar.active .submenu {
+    display: none;
+  }
+  
+  .sidebar.active .menu li a {
+    text-align: center;
+  }
+  
