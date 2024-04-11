@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+  }
+  
+  .recipe-card {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #0c1e44a2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .dish-image {
+    height: 500px;
+    background-image: url('recipe.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .dish-name {
+    font-size: 28px;
+    font-family:cursive;
+    color: #818184d8;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: flex;
+  }
+  
+  .ingredient-list,
+  .instructions {
+    flex: 1;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #141313;
+  }
+  
+  ul, ol {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  li {
+    color: #747070;
+    font-size: 16px;
+  }
+  
+  .serving-size {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
