@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: spin 1s linear infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+.spinner {
+    background-image: url('kf_1-9-4_dot-spinner.gif'); /* Replace 'spinner.png' with your spinner image */
+}
+
+.bars {
+    background-image: url('animation-progress-bars-html-css.gif'); /* Replace 'bars.png' with your bars image */
+}
+
+.dots {
+    background-image: url('loadingdots2.gif'); /* Replace 'dots.png' with your dots image */
+}
+
+.custom {
+    background-image: url('build-in-loading-submit-button.webp'); /* Replace 'custom.png' with your custom animation image */
+}
+
+.loader:hover {
+    transform: scale(1.1); /* Add hover effect to scale loader on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .loader {
+        width: 70px;
+        height: 70px;
+    }
+}
+.loader-container {
+    margin-bottom: 30px;
+}
