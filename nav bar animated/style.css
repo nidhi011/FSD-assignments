@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  .underline {
+    height: 3px;
+    width: 0;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover + .underline,
+  nav ul li a.active + .underline {
+    width: 100%;
+  }
+  
